@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './Menu.css';
 
 class SodexoMenu extends Component {
 
@@ -31,25 +31,32 @@ class SodexoMenu extends Component {
           ): (
               <div>
                 <div>
-                  <p>{this.state.item[0].title_fi} {this.state.item[0].price}</p>
+                  <p className="title">{this.state.item[0].title_fi} <br/> {this.state.item[0].title_en}</p>
+                  <p className="price">{this.state.item[0].price}</p>
                 </div>
                 <div>
-                  <p>{this.state.item[1].title_fi} {this.state.item[1].price}</p>
+                  <p className="title">{this.state.item[1].title_fi} <br/> {this.state.item[1].title_en}</p>
+                  <p className="price">{this.state.item[1].price}</p>
                 </div>
                 <div>
-                  <p>{this.state.item[2].title_fi} {this.state.item[2].price}</p>
+                  <p className="title">{this.state.item[2].title_fi} <br/> {this.state.item[2].title_en}</p>
+                  <p className="price">{this.state.item[2].price}</p>
                 </div>
                 <div>
-                  <p>{this.state.item[3].title_fi} {this.state.item[3].price}</p>
+                  <p className="title">{this.state.item[3].title_fi} <br/> {this.state.item[3].title_en}</p>
+                  <p className="price">{this.state.item[3].price}</p>
                 </div>
                 <div>
-                  <p>{this.state.item[4].title_fi} {this.state.item[4].price}</p>
+                  <p className="title">{this.state.item[4].title_fi} <br/> {this.state.item[4].title_en}</p>
+                  <p className="price">{this.state.item[4].price}</p>
                 </div>
                 <div>
-                  <p>{this.state.item[5].title_fi} {this.state.item[5].price}</p>
+                  <p className="title">{this.state.item[5].title_fi} <br/> {this.state.item[5].title_en}</p>
+                  <p className="price">{this.state.item[5].price}</p>
                 </div>
                 <div>
-                  <p>{this.state.item[6].title_fi} {this.state.item[6].price}</p>
+                  <p className="title">{this.state.item[6].title_fi} <br/> {this.state.item[6].title_en}</p>
+                  <p className="price">{this.state.item[6].price}</p>
                 </div>
               </div>
           )}

@@ -1,14 +1,21 @@
 .left {
   display:block;
   float: left;
-  width: 40%;
+  width: 45%;
   margin-left: 40px;
   text-align: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  height: 100%;
 }
+
 .right {
   display:block;
   float: right;
-  width: 40%;
-  margin-right: 100px;
+  width: 45%;
+  margin-right: 40px;
   text-align: center;
+  border: 3px solid black;
+  border-radius: 20px;
 }
