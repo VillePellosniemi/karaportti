@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-class Menu extends Component {
+class SodexoMenu extends Component {
 
   state = {
     loading: true,
@@ -9,7 +9,13 @@ class Menu extends Component {
   };
 
   async componentDidMount () {
-    const url = "https://cors-anywhere.herokuapp.com/https://www.sodexo.fi/ruokalistat/output/daily_json/16365/2019/11/04/fi";
+    let vuosi = new Date().getFullYear();
+    let kk = new Date().getMonth()+1;
+    let d = new Date().getDate();
+    let paivays = vuosi + '/' + kk + '/' + d;
+    let myyrmaki = 16365;
+
+    const url = 'https://cors-anywhere.herokuapp.com/https://www.sodexo.fi/ruokalistat/output/daily_json/' + myyrmaki + '/' + paivays + '/fi';
     const response = await fetch(url);
     const data = await response.json();
     this.setState({item: data.courses, loading: false})
@@ -52,4 +58,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu;
+export default SodexoMenu;
