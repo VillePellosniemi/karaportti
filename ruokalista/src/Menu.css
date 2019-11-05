@@ -2,25 +2,24 @@
 
 .title {
     float: left;
-    width: 73%;
+    width: 77%;
     display: block;
     border: 2px solid black;
-    padding: 8px;
+    padding: 15px 0 15px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin: 3px;
+    color: #29295D;
 }
 
 .price {
     float: right;
-    width: 23%;
+    width: 20%;
     display: block;
     font-family: 'Roboto', sans-serif;
     border: 2px solid black;
-    padding-top: 17.5px;
-    padding-bottom: 17.5px;
+    padding: 24px 0 24px 0;
+    margin: 3px;
 }
 
-.food {
-    margin-top: -30px;
-}
 

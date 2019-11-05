@@ -1,13 +1,14 @@
 .left {
   display:block;
   float: left;
-  width: 45%;
-  margin-left: 40px;
+  width: 48%;
+  margin-left: 15px;
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid #ED1B26;
   border-radius: 20px;
   padding: 10px;
   height: 100%;
+  background-color: whitesmoke;
 }
 
 .right {
@@ -18,4 +19,9 @@
   text-align: center;
   border: 3px solid black;
   border-radius: 20px;
+}
+
+#logo {
+  width: 200px;
+  padding: 0 0 8px 0;
 }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import FazerMenu from './FazerMenu';
 import SodexoMenu from './SodexoMenu';
 
 class App extends Component {
@@ -8,12 +7,8 @@ class App extends Component {
     return (
         <div className="App">
           <div className="left">
-            <h1>Sodexo</h1>
+            <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png" alt={"logo"}/>
             <SodexoMenu/>
-          </div>
-          <div className="right">
-            <h1>Fazer</h1>
-            <FazerMenu/>
           </div>
         </div>
     );
