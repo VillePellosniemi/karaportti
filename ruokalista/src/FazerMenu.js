@@ -1,40 +1,53 @@
 import React, {Component} from 'react';
-import './App.css';
+import './Menu.css'
 
 class FazerMenu extends Component {
 
-  state = {
-    loading: true,
-    item: null,
-  };
+  constructor () {
+    super();
+    this.state = {
+      items: [],
+      isLoaded: false,
+    }
+  }
 
-  async componentDidMount () {
-    /* vaihda menufordays indxiä saadaksesi eri päivän */
-    const url = 'https://cors-anywhere.herokuapp.com/https://www.fazerfoodco.fi/modules/json/json/Index?costNumber=3208&language=fi';
-    const response = await fetch(url);
-    const data = await response.json();
-    this.setState({item: data.MenusForDays[0], loading: false})
-    console.log(data);
+  componentWillMount () {
+    const url = 'http://cors-anywhere.herokuapp.com/https://www.fazerfoodco.fi/modules/json/json/Index?costNumber=3208&language=fi';
+    fetch(url)
+    .then(response => response.json())
+    .then(({MenusForDays: items}) => {
+      this.setState({
+        isLoaded: true,
+        items,
+      })
+    })
   }
 
   render() {
 
 
+    let {isLoaded, items} = this.state;
+
+    if (!isLoaded) {
+      return <div>Loading...</div>;
+    }
+
+    console.log(items);
+
     return (
-        <div className="App">
-          {this.state.loading || !this.state.item ? (
-              <div>loading...</div>
-          ): (
-              <div>
+        <div>
+          <img id="fazerlogo" src="http://www.seinajokiareena.fi/images/kuvapankki/maxi/Fazer_food_co_logo_cmyk_309.png" alt={"logo"}/>
+          <div>
+            {items.map(item =>
                 <div>
-                  <p>{this.state.item.SetMenus[0].Components}</p>
-                  <p>{this.state.item.SetMenus[1].Components}</p>
-                  <p>{this.state.item.SetMenus[2].Components}</p>
-                  <p>{this.state.item.SetMenus[3].Components}</p>
-                  <p>{this.state.item.SetMenus[4].Components}</p>
+                  <p>
+                    {item.SetMenus.map(item =>
+                        <p>{item.Components}</p>
+                    )}
+                  </p>
                 </div>
-              </div>
-          )}
+            )}
+          </div>
         </div>
     );
   }

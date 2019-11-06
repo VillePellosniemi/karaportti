@@ -40,12 +40,15 @@ class SodexoMenu extends Component {
 
     return (
         <div>
-          {items.map(item =>
-              <div>
-                <p className="title">{item.title_fi}<br/>{item.title_en}</p>
-                <p className="price">{item.price}</p>
-              </div>
-          )}
+          <img id="sodexologo" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png" alt={"logo"}/>
+          <div>
+            {items.map(item =>
+                <div>
+                  <p className="title">{item.title_fi}<br/>{item.title_en}</p>
+                  <p className="price">{item.price}</p>
+                </div>
+            )}
+          </div>
         </div>
     );
   }

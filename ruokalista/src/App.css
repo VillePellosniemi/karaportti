@@ -1,7 +1,7 @@
 .left {
   display:block;
   float: left;
-  width: 48%;
+  width: 47.5%;
   margin-left: 15px;
   text-align: center;
   border: 3px solid #ED1B26;
@@ -15,13 +15,8 @@
   display:block;
   float: right;
   width: 45%;
-  margin-right: 40px;
+  margin-right: 15px;
   text-align: center;
   border: 3px solid black;
   border-radius: 20px;
-}
-
-#logo {
-  width: 200px;
-  padding: 0 0 8px 0;
 }
