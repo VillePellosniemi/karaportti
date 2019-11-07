@@ -7,10 +7,7 @@
   border: 3px solid #ED1B26;
   border-radius: 20px;
   padding: 10px;
-  background-color: whitesmoke;
-  top: 10%;
-  bottom: 10%;
-  position: absolute;
+  background-color: #fcfcfc;
 }
 
 .right {
@@ -21,8 +18,12 @@
   text-align: center;
   border: 3px solid black;
   border-radius: 20px;
-  top: 10%;
-  bottom: 10%;
+}
+
+#myVideo {
+  position: fixed;
   right: 0;
-  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }

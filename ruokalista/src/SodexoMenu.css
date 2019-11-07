@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
 
 .title {
     float: left;
@@ -6,7 +7,7 @@
     display: block;
     border: 2px solid black;
     padding: 10px 0 10px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'McLaren', cursive;
     font-size: 16px;
     margin: 3px;
     color: #29295D;
@@ -16,9 +17,9 @@
     float: right;
     width: 20%;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'McLaren', cursive;
     border: 2px solid black;
-    padding: 19.5px 0 19.5px 0;
+    padding: 21.5px 0 21.5px 0;
     margin: 3px;
 }
 
