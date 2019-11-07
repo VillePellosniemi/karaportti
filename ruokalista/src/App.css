@@ -1,22 +1,28 @@
 .left {
   display:block;
   float: left;
-  width: 47.5%;
+  width: 47%;
   margin-left: 15px;
   text-align: center;
   border: 3px solid #ED1B26;
   border-radius: 20px;
   padding: 10px;
-  height: 100%;
   background-color: whitesmoke;
+  top: 10%;
+  bottom: 10%;
+  position: absolute;
 }
 
 .right {
   display:block;
   float: right;
-  width: 45%;
+  width: 47%;
   margin-right: 15px;
   text-align: center;
   border: 3px solid black;
   border-radius: 20px;
+  top: 10%;
+  bottom: 10%;
+  right: 0;
+  position: absolute;
 }

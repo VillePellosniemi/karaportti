@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Menu.css'
+import './SodexoMenu.css'
 
 class SodexoMenu extends Component {
 

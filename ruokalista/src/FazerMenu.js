@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Menu.css'
+import './FazerMenu.css'
 
 class FazerMenu extends Component {
 
@@ -25,7 +25,6 @@ class FazerMenu extends Component {
 
   render() {
 
-
     let {isLoaded, items} = this.state;
 
     if (!isLoaded) {
@@ -38,13 +37,11 @@ class FazerMenu extends Component {
         <div>
           <img id="fazerlogo" src="http://www.seinajokiareena.fi/images/kuvapankki/maxi/Fazer_food_co_logo_cmyk_309.png" alt={"logo"}/>
           <div>
-            {items.map(item =>
+            {items.slice(0,1).map(item =>
                 <div>
-                  <p>
-                    {item.SetMenus.map(item =>
-                        <p>{item.Components}</p>
-                    )}
-                  </p>
+                  {item.SetMenus.map(item =>
+                      <p className="foodname">{item.Components}</p>
+                  )}
                 </div>
             )}
           </div>
