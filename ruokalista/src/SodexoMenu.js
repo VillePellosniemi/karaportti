@@ -11,7 +11,7 @@ class SodexoMenu extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     let vuosi = new Date().getFullYear();
     let kk = new Date().getMonth() + 1;
     let d = new Date().getDate();
@@ -36,11 +36,14 @@ class SodexoMenu extends Component {
       return <div>Loading...</div>;
     }
 
+    const str = new Date();
+
     return (
         <div>
           <img id="sodexologo"
                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png"
                alt={'logo'}/>
+          <h1>Date: {str.toString()}</h1>
           <div>
             {items.map(item =>
                 <div>

@@ -11,7 +11,9 @@ class FazerMenu extends Component {
     };
   }
 
-  componentWillMount() {
+
+
+  componentDidMount() {
     const url = 'http://cors-anywhere.herokuapp.com/https://www.fazerfoodco.fi/modules/json/json/Index?costNumber=3208&language=fi';
     fetch(url)
       .then(response => response.json())
