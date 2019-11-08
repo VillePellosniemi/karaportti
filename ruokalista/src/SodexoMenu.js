@@ -1,36 +1,34 @@
 import React, {Component} from 'react';
-import './SodexoMenu.css'
+import './SodexoMenu.css';
 
 class SodexoMenu extends Component {
 
-  constructor () {
+  constructor() {
     super();
     this.state = {
       items: [],
       isLoaded: false,
-    }
+    };
   }
 
-  componentWillMount () {
+  componentWillMount() {
     let vuosi = new Date().getFullYear();
-    let kk = new Date().getMonth()+1;
+    let kk = new Date().getMonth() + 1;
     let d = new Date().getDate();
     let paivays = vuosi + '/' + kk + '/' + d;
     let myyrmaki = 16365;
 
-    const url = 'http://cors-anywhere.herokuapp.com/https://www.sodexo.fi/ruokalistat/output/daily_json/' + myyrmaki + '/' + paivays + '/fi';
-    fetch(url)
-        .then(response => response.json())
-        .then(({courses: items}) => {
-          this.setState({
-            isLoaded: true,
-            items,
-          })
-    })
+    const url = 'http://cors-anywhere.herokuapp.com/https://www.sodexo.fi/ruokalistat/output/daily_json/' +
+        myyrmaki + '/' + paivays + '/fi';
+    fetch(url).then(response => response.json()).then(({courses: items}) => {
+      this.setState({
+        isLoaded: true,
+        items,
+      });
+    });
   }
 
   render() {
-
 
     let {isLoaded, items} = this.state;
 
@@ -40,13 +38,15 @@ class SodexoMenu extends Component {
 
     return (
         <div>
-          <img id="sodexologo" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png" alt={"logo"}/>
+          <img id="sodexologo"
+               src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png"
+               alt={'logo'}/>
           <div>
             {items.map(item =>
                 <div>
                   <p className="title">{item.title_fi}<br/>{item.title_en}</p>
                   <p className="price">{item.price}</p>
-                </div>
+                </div>,
             )}
           </div>
         </div>
