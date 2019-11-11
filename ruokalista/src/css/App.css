@@ -1,27 +1,12 @@
-.left {
-  display:block;
-  float: left;
-  width: 47%;
-  margin-left: 15px;
-  text-align: center;
-  border: 3px solid #ED1B26;
-  border-radius: 20px;
-  padding: 10px;
-  background-color: #fcfcfc;
+.bg {
+    background-image: url("http://www.kabu-load.net/data/out/3/IMG_387543.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
 }
 
-.right {
-  display:block;
-  float: right;
-  width: 47%;
-  margin-right: 15px;
-  text-align: center;
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.date_name {
-  font-family: 'McLaren', cursive;
-  font-size: 20px;
+body, html {
+    height: 100%;
+    margin: 0;
 }

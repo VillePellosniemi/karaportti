@@ -1,20 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
 
-.title {
+.left {
+    width: 80%;
+    text-align: center;
+    border: 2px solid #293991;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fcfcfc;
+    position: relative;                /* [1] */
+    display: inline-block;             /* [2] */
+    top: 50%; left: 50%;               /* [3] */
+    transform: translate(-47%, -50%);
+}
+
+.outer {
+    width: 50%;
     float: left;
-    width: 99%;
+    height: 100vh;
+}
+
+.title {
+    width: 98%;
     display: block;
     border: 2px solid black;
     padding: 10px 0 10px 0;
     font-family: 'McLaren', cursive;
     font-size: 16px;
-    margin: 3px;
+    margin: 5px;
     color: #29295D;
+    border-radius: 7px;
 }
 
 .price {
-    float: right;
     width: 20%;
     display: block;
     font-family: 'McLaren', cursive;

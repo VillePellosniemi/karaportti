@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
 
+html {
+    overflow: hidden;
+}
+
+.right {
+    width: 80%;
+    text-align: center;
+    border: 2px solid #0A2E6B;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fcfcfc;
+    position: relative;                /* [1] */
+    display: inline-block;             /* [2] */
+    top: 50%; left: 50%;               /* [3] */
+    transform: translate(-53%,-50%);
+}
+
+.outer2 {
+    width: 50%;
+    float: right;
+    height: 100vh;
+}
+
 #fazerlogo {
     width: 350px;
     padding: 25px 0 15px 0;
@@ -7,10 +30,11 @@
 
 .food_group {
     border: 2px solid black;
-    margin: 3px;
+    margin: 4px;
     font-family: 'McLaren', cursive;
     float: left;
-    width: 99%;
+    width: 98%;
+    border-radius: 7px;
 }
 
 .food_element {

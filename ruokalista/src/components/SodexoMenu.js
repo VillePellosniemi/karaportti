@@ -36,23 +36,19 @@ class SodexoMenu extends Component {
       return <div>Loading...</div>;
     }
 
-    let dayNumber = (new Date().getDay()-1);
-    let dayNames = ["Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai - ei ruokaa tänään!", "Sunnuntai - ei ruokaa tänään!"];
-    let dayName = dayNames[dayNumber];
-    console.log(dayNumber);
-
     return (
-        <div>
-          <img id="sodexologo"
-               src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png"
-               alt={'logo'}/>
-          <p>{dayName}</p>
-          <div>
-            {items.map(item =>
-                <div>
-                  <p className="title">{item.title_fi}</p>
-                </div>,
-            )}
+        <div className="outer">
+          <div className="left">
+            <img id="sodexologo"
+                 src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png"
+                 alt={'logo'}/>
+            <div>
+              {items.map(item =>
+                  <div>
+                    <p className="title">{item.title_fi}</p>
+                  </div>
+              )}
+            </div>
           </div>
         </div>
     );
