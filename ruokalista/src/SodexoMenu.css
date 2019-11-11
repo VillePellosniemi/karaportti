@@ -3,7 +3,7 @@
 
 .title {
     float: left;
-    width: 77%;
+    width: 99%;
     display: block;
     border: 2px solid black;
     padding: 10px 0 10px 0;
@@ -19,7 +19,7 @@
     display: block;
     font-family: 'McLaren', cursive;
     border: 2px solid black;
-    padding: 21.5px 0 21.5px 0;
+    padding: 10px 0 10px 0;
     margin: 3px;
 }
 

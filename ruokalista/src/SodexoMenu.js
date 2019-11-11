@@ -46,12 +46,10 @@ class SodexoMenu extends Component {
           <img id="sodexologo"
                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png"
                alt={'logo'}/>
-          <p className="date_name">{monthName}</p>
           <div>
             {items.map(item =>
                 <div>
-                  <p className="title">{item.title_fi}<br/>{item.title_en}</p>
-                  <p className="price">{item.price}</p>
+                  <p className="title">{item.title_fi}</p>
                 </div>,
             )}
           </div>

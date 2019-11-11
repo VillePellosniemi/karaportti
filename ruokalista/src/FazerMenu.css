@@ -7,10 +7,10 @@
 
 .food_group {
     border: 2px solid black;
-    margin: 4px;
+    margin: 3px;
     font-family: 'McLaren', cursive;
     float: left;
-    width: 70%;
+    width: 99%;
 }
 
 .food_element {
