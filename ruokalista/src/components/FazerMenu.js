@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './FazerMenu.css';
+import '../css/FazerMenu.css';
 
 class FazerMenu extends Component {
 

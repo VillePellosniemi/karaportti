@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './SodexoMenu.css';
+import '../css/SodexoMenu.css';
 
 class SodexoMenu extends Component {
 
@@ -37,8 +37,8 @@ class SodexoMenu extends Component {
     }
 
     let dayNumber = (new Date().getDay()-1);
-    let monthNames = ["Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai - ei ruokaa tänään!", "Sunnuntai - ei ruokaa tänään!"];
-    let monthName = monthNames[dayNumber];
+    let dayNames = ["Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai - ei ruokaa tänään!", "Sunnuntai - ei ruokaa tänään!"];
+    let dayName = dayNames[dayNumber];
     console.log(dayNumber);
 
     return (
@@ -46,6 +46,7 @@ class SodexoMenu extends Component {
           <img id="sodexologo"
                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sodexo.svg/1200px-Sodexo.svg.png"
                alt={'logo'}/>
+          <p>{dayName}</p>
           <div>
             {items.map(item =>
                 <div>
