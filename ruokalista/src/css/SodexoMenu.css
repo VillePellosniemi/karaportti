@@ -23,11 +23,10 @@
 .title {
     width: 98%;
     display: block;
-    border: 2px solid black;
     padding: 10px 0 10px 0;
     font-family: 'McLaren', cursive;
     font-size: 16px;
-    margin: 5px;
+    margin: 6px;
     color: #29295D;
     border-radius: 7px;
 }
