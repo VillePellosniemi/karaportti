@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="shell" createEmptyFolders="true" filePermissions="420" folderPermissions="493">
+    <serverData>
+      <paths name="shell">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ruokalista" local="$PROJECT_DIR$/ruokalista/build" web="/ruokalista" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
