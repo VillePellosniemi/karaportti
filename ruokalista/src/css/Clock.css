@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+
 .left {
-    width: 80%;
+    width: 100%;
     text-align: center;
-    border: 2px solid #293991;
     border-radius: 15px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.94);
     position: relative;                /* [1] */
     display: inline-block;             /* [2] */
     top: 50%; left: 50%;               /* [3] */
@@ -17,6 +17,30 @@
     height: 100vh;
 }
 
-.clock {
-    background-color: black;
+time.react-clock {
+    display: inline-block;
 }
+
+.react-clock__mark__number {
+    font-size: 53px;
+    font-family: 'McLaren', cursive;
+
+}
+
+.react-clock__face {
+    background-color: rgba(255, 255, 255, 0.94);
+    border: 12px solid #5E6168 !important;
+}
+
+.react-clock__mark__number {
+    top: 6% !important;
+}
+
+.react-clock__hand__body {
+    background-color: #EF701D !important;
+}
+
+.react-clock__second-hand__body {
+    background-color: black !important;
+}
+

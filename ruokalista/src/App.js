@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          <FazerMenu/>
           <Kello/>
+          <FazerMenu/>
           <Background/>
         </div>
     );

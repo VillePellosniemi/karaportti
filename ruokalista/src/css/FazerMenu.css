@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 
 .right {
-    width: 80%;
+    width: 90%;
     text-align: center;
-    border: 2px solid #0A2E6B;
+    border: 5px solid #0A2E6B;
     border-radius: 15px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.94);
     position: relative;                /* [1] */
     display: inline-block;             /* [2] */
     top: 50%; left: 50%;               /* [3] */
-    transform: translate(-53%,-50%);
+    transform: translate(-55%,-50%);
 }
 
 .outer2 {
@@ -38,10 +39,10 @@
 }
 
 #day {
-    font-size: 25px;
+    font-size: 30px;
     color: #0A2E6B;
-    font-family: 'McLaren', cursive;
-    margin: 15px 0 15px 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0 20px 0;
 }
 
 
