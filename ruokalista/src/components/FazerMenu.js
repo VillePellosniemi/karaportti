@@ -27,6 +27,15 @@ class FazerMenu extends Component {
 
   render() {
 
+    let dayNumber = (new Date().getDay()-1);
+    let monthNames = ["Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai - ei ruokaa tänään!", "Sunnuntai - ei ruokaa tänään!"];
+    let monthName = monthNames[dayNumber];
+
+    let vuosi = new Date().getFullYear();
+    let kk = new Date().getMonth() + 1;
+    let d = new Date().getDate();
+    let paivays = d + '/' + kk + '/' + vuosi;
+
     let {isLoaded, items} = this.state;
 
     if (!isLoaded) {
@@ -41,6 +50,7 @@ class FazerMenu extends Component {
             <img id="fazerlogo"
                  src="http://www.seinajokiareena.fi/images/kuvapankki/maxi/Fazer_food_co_logo_cmyk_309.png"
                  alt={'logo'}/>
+            <p id="day">{monthName} {paivays}</p>
             {items.slice(0, 1).map(item =>
                 <div>
                   {item.SetMenus.map(item =>
