@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "domready": "^1.0.8",
     "json-schema": "latest",
     "moment": "^2.24.0",
     "react": "^16.11.0",
+    "react-background-video-player": "^1.1.6",
     "react-clock": "^2.4.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-native-video": "^5.0.2",
+    "react-player": "^1.14.1",
     "react-scripts": "3.2.0",
-    "react-youtube": "^7.9.0"
+    "react-youtube": "^7.9.0",
+    "react-youtube-background": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

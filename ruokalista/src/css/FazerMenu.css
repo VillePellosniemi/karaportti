@@ -26,7 +26,7 @@
 }
 
 .food_group {
-    margin: 12px;
+    margin: 9px;
     font-family: 'McLaren', cursive;
     float: left;
     width: 98%;
@@ -34,7 +34,7 @@
 }
 
 .food_element {
-    margin: 10px;
+    margin: 8px;
     font-size: 22px;
 }
 

@@ -21,7 +21,7 @@ class Kello extends Component {
           <div className="left">
             <Clock
                 value={this.state.date}
-                size={550}
+                size={600}
                 renderNumbers={true}
                 hourHandWidth={11}
                 hourHandLength={55}
