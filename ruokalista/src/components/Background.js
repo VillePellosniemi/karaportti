@@ -1,17 +1,22 @@
 import React, {Component} from 'react';
+import ReactPlayer from 'react-player';
 import '../css/App.css';
 
-
 class Background extends Component {
-  render () {
+  render() {
     return (
-        <div className="videoBgWrapper">
-          <video loop muted autoPlay
-                 className="videoBg">
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"/>
-          </video>
+        <div className="video-wrapper">
+          <ReactPlayer
+              className="vid"
+              width="100%"
+              height="866px"
+              url="https://youtu.be/kd-JzOpVd0E"
+              muted
+              playing
+              loop
+          />
         </div>
-    )
+    );
   }
 }
 
