@@ -34,7 +34,7 @@ class FazerMenuEN extends Component {
     let vuosi = new Date().getFullYear();
     let kk = new Date().getMonth() + 1;
     let d = new Date().getDate();
-    let paivays = d + '/' + kk + '/' + vuosi;
+    let paivays = d + '.' + kk + '.' + vuosi;
 
     let {isLoaded, items} = this.state;
 
@@ -53,7 +53,7 @@ class FazerMenuEN extends Component {
             <p id="day">{monthName} {paivays}</p>
             {items.slice(0, 1).map(item =>
                 <div>
-                  {item.SetMenus.splice(0,4).map(item =>
+                  {item.SetMenus.splice(0,5).map(item =>
                       <div className="food_group">
                         {item.Components.map(item =>
                             <p className="food_element">{item}</p>,

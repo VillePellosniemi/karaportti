@@ -34,7 +34,7 @@ class FazerMenu extends Component {
     let vuosi = new Date().getFullYear();
     let kk = new Date().getMonth() + 1;
     let d = new Date().getDate();
-    let paivays = d + '/' + kk + '/' + vuosi;
+    let paivays = d + '.' + kk + '.' + vuosi;
 
     let {isLoaded, items} = this.state;
 

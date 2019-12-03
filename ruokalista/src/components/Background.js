@@ -10,7 +10,7 @@ class Background extends Component {
               className="vid"
               width="100%"
               height="866px"
-              url="https://youtu.be/kd-JzOpVd0E"
+              url="https://vimeo.com/375886369"
               muted
               playing
               loop
