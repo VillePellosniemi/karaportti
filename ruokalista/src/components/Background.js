@@ -10,10 +10,15 @@ class Background extends Component {
               className="vid"
               width="100%"
               height="866px"
-              url="https://vimeo.com/375886369"
+              url="https://www.youtube.com/watch?v=kd-JzOpVd0E"
               muted
               playing
               loop
+              config={{
+                youtube: {
+                  playerVars: { modestbranding: 1 }
+                }
+              }}
           />
         </div>
     );
