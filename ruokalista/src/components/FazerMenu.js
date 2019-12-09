@@ -14,7 +14,7 @@ class FazerMenu extends Component {
 
 
   componentDidMount() {
-    const url = 'http://cors-anywhere.herokuapp.com/https://www.fazerfoodco.fi/modules/json/json/Index?costNumber=3208&language=fi';
+    const url = 'http://cors-anywhere.herokuapp.com/https://www.fazerfoodco.fi/modules/json/json/Index?costNumber=3076&language=fi';
     fetch(url)
       .then(response => response.json())
       .then(({MenusForDays: items}) => {
