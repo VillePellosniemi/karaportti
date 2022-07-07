@@ -5,7 +5,7 @@
   "dependencies": {
     "domready": "^1.0.8",
     "json-schema": "latest",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.11.0",
     "react-background-video-player": "^1.1.6",
     "react-clock": "^2.4.0",
